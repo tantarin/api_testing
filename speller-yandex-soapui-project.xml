@@ -169,7 +169,7 @@
       </spel:CheckTextsRequest>\r
    </soapenv:Body>\r
 </soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="96dce580-a67b-4f7a-aa82-1127da2f6226"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="MyScript" id="e2df01e1-9f91-44d1-af19-d89a6e5d4de2"><con:settings/><con:config><script>import com.eviware.soapui.support.XmlHolder
-context.fileReader = new BufferedReader(new FileReader('C:/new/abc.csv'))
+context.fileReader = new BufferedReader(new FileReader('abc.csv'))
 
 rowsData = context.fileReader.readLines()
 int rowsize = rowsData.size()
